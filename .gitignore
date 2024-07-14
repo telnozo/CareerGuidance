@@ -1,0 +1,8 @@
+.env
+/.venv
+/__pycache__/
+*.docx
+*.txt
+test.py
+test2.py
+testapi.py
