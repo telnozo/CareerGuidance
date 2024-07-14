@@ -2,7 +2,7 @@
 /.venv
 /__pycache__/
 *.docx
-*.txt
+Resources.txt
 test.py
 test2.py
 testapi.py
