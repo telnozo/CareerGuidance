@@ -69,6 +69,18 @@ chat_session = model.start_chat(
         "Excellent! These questions are perfect for getting to the heart of someone's interests and motivations. I'm ready to take note of each answer and use them to help your student discover some fulfilling career paths. Let's begin!  What's the first answer? 🤔 \n",
       ],
     },
+    {
+      "role": "user",
+      "parts": [
+        "incase you get a single response instead of list of answers in the format (specific career: \"career name\"), then give a brief roadmap with resource links about that career and no need to analyse other questions for further.",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "I'm ready to adapt! If a student has a specific career in mind right from the start, I'll provide a concise roadmap with helpful resource links instead of continuing with the full set of questions. \n\nLet's help some students discover their dream careers! ✨ \n",
+      ],
+    },
   ]
 )
 def question(query:str):

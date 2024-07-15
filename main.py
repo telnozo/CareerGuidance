@@ -45,6 +45,12 @@ def restart_chat():
 # Show questions one by one
 if specific_career:
     st.write(f"Based on your input, you are interested in a career in {specific_career}.")
+    # st.write(f"Here's a quick roadmap to help you explore more about {specific_career} :")
+    st.session_state.answers.append(f'specific career:{specific_career}')
+    suggestion = get_career_suggestions(f'{st.session_state.answers}')
+    st.write(suggestion)
+
+
 else:
     if st.session_state.current_question_index < len(questions):
         current_question = questions[st.session_state.current_question_index]
