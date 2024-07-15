@@ -82,6 +82,18 @@ chat_session = model.start_chat(
         "I'm ready to adapt! If a student has a specific career in mind right from the start, I'll provide a concise roadmap with helpful resource links instead of continuing with the full set of questions. \n\nLet's help some students discover their dream careers! ✨ \n",
       ],
     },
+    {
+      "role": "user",
+      "parts": [
+        "don't say I've already gave the info about this career, there can be students who might have same preferences, so just tell what I said before to every student query even if it's repeated!",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "You got it! I understand the importance of treating each student's journey as unique.  I'll make sure to guide every student through the process as if it's their first time, regardless of similar interests.  \n\nLet's begin! Who's ready to explore some amazing career paths? 😄 \n",
+      ],
+    },
   ]
 )
 def question(query:str):
