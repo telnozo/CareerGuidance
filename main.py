@@ -14,7 +14,7 @@ def get_career_suggestions(answers):
 st.title('Career Guidance Portal')
 
 # Preliminary career choice input
-specific_career = st.text_input("If you have a specific career in mind, please enter it here:")
+specific_career = st.text_input("If you have a specific career in mind, please enter it here or leave blank here:")
 
 # Define the questions
 questions = [
