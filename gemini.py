@@ -15,7 +15,7 @@ generation_config = {
 }
 
 model = genai.GenerativeModel(
-  model_name="gemini-1.5-pro",
+  model_name="gemini-3-flash-preview",
   generation_config=generation_config,
   system_instruction="respond to student's queries of high school or University college in an encouraging way to guide them to pick the career",
 )
